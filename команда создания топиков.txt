@@ -1,0 +1,8 @@
+запуск докер-композ	docker-compose up --build -d
+остановка 				docker-compose down
+
+
+создать топик: docker-compose exec kafka kafka-topics --create --topic order-status-topic --partitions 1 --replication-factor 1 --if-not-exists --bootstrap-server localhost:9092
+
+-->Created topic order-status-topic.
+просмотр текущих контейнеров docker ps
